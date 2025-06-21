@@ -79,6 +79,7 @@ nav ul li a:hover {
 .hero {
   text-align: center;
   padding: 5rem 2rem 4rem;
+  perspective: 1000px;
 }
 
 .hero h1 {
@@ -90,6 +91,28 @@ nav ul li a:hover {
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto 2rem;
+}
+
+.screenshot-preview {
+  max-width: 60%;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.screenshot-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.screenshot-preview:hover {
+  transform: scale(1.02) rotateX(5deg) rotateY(-5deg);
+  box-shadow: 0 25px 75px rgba(0, 0, 0, 0.3);
 }
 
 .cta-buttons {
@@ -297,6 +320,10 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
+  }
+
+  .screenshot-preview {
+    display: none;
   }
   
   .cards,
