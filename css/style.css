@@ -96,7 +96,6 @@ nav ul li a:hover {
 .screenshot-preview {
   max-width: 60%;
   margin: 2rem auto;
-  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -107,7 +106,6 @@ nav ul li a:hover {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 16px;
 }
 
 .screenshot-preview:hover {
